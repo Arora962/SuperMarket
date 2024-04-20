@@ -1,0 +1,16 @@
+release/cart.o
+release/items.o
+release/kycpage.o
+release/main.o
+release/mainpage.o
+release/mainpage2.o
+release/mainwindow.o
+release/smtp.o
+release/qrc_Res.o
+release/moc_cart.o
+release/moc_items.o
+release/moc_kycpage.o
+release/moc_mainpage.o
+release/moc_mainpage2.o
+release/moc_mainwindow.o
+release/moc_smtp.o

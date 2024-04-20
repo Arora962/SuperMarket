@@ -1,0 +1,16 @@
+debug/cart.o
+debug/items.o
+debug/kycpage.o
+debug/main.o
+debug/mainpage.o
+debug/mainpage2.o
+debug/mainwindow.o
+debug/smtp.o
+debug/qrc_Res.o
+debug/moc_cart.o
+debug/moc_items.o
+debug/moc_kycpage.o
+debug/moc_mainpage.o
+debug/moc_mainpage2.o
+debug/moc_mainwindow.o
+debug/moc_smtp.o
