@@ -48,7 +48,7 @@ void Cart::bill_send()
     get_tables.next();
 
     msg=QString("Hi %1 ,\nThank you for shopping with us. Your bill is attached as follows. We hope to see you again. ").arg(user_fullname);
-    Bill_Path=QString("C:/Users/Kriar/Documents/Project_Kriti/UserData/%1/Bill.txt").arg(QString::number(uidtopass));
+    Bill_Path=QString("../UserData/%1/Bill.txt").arg(QString::number(uidtopass));
     A.append(Bill_Path);
     smtp->sendMail_attach(sender, get_mail.value(0).toString() , subject,msg,A);
 
@@ -56,7 +56,7 @@ void Cart::bill_send()
 
     for (tcount=0;tcount<8;tcount++)
     {
-        Cart_Path=QString("C:/Users/Kriar/Documents/Project_Kriti/UserData/%1/%2_%3.txt").\
+        Cart_Path=QString("../UserData/%1/%2_%3.txt").\
                     arg(QString::number(uidtopass),get_tables.value(0).toString(),QString::number(uidtopass));
         filepoint=Cart_Path.toStdString();
         if (FileExists(filepoint))
@@ -92,7 +92,7 @@ Cart::Cart(int current_user,QString fullname,QWidget *parent): QMainWindow(paren
     QSqlQuery get_table,get_price;
     QString Bill_Path="";
 
-    Bill_Path=QString("C:/Users/Kriar/Documents/Project_Kriti/UserData/%1/Bill.txt").arg(QString::number(current_user));
+    Bill_Path=QString("../UserData/%1/Bill.txt").arg(QString::number(current_user));
 
     f2.open(Bill_Path.toStdString(),ios::trunc);
     bill_data_top="Hi "+fullname.toStdString()+",\n"+"Your bill is as follows:\n"+"Item Name";
@@ -119,7 +119,7 @@ Cart::Cart(int current_user,QString fullname,QWidget *parent): QMainWindow(paren
         smatch m,m2;
 
         get_tb=get_table.value(0).toString();
-        fp=QString("C:/Users/Kriar/Documents/Project_Kriti/UserData/%1/%2_%3.txt").arg(QString::number(current_user),get_tb,QString::number(current_user));
+        fp=QString("../UserData/%1/%2_%3.txt").arg(QString::number(current_user),get_tb,QString::number(current_user));
         if(f.is_open())
             f.close();
         filepoint=fp.toStdString();
