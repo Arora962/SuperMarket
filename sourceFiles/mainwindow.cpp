@@ -95,12 +95,12 @@ void MainWindow::on_pushButton_clicked()
             if(upass[j]==Password)
             {
                 QMessageBox::information(this,"Sign In","Login Success");
-                QDir dir("C:/Users/Kriar/Documents/Project_Kriti/UserData");
+                QDir dir("../UserData");
 
                 if (!dir.exists())
                     dir.mkpath(".");
 
-                filepath=QString("C:/Users/Kriar/Documents/Project_Kriti/UserData/%1").arg(QString::number(j+1));
+                filepath=QString("../UserData/%1").arg(QString::number(j+1));
 
                 QDir dir2(filepath);
 
@@ -120,7 +120,7 @@ void MainWindow::on_pushButton_clicked()
     if(UserName=="testuser" && Password== "testpassword")
     {
         QMessageBox::information(this,"Sign In","Login Success");
-        QDir dir("C:/Users/Kriar/Documents/Project_Kriti/UserData");
+        QDir dir("../UserData");
 
         if (!dir.exists())
             dir.mkpath(".");
