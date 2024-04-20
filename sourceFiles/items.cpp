@@ -44,7 +44,7 @@ Items::Items(int cuser,QString iname,QString fullname,QWidget *parent): QMainWin
     heading.next();
     ui->label_10->setText(heading.value(0).toString());
 
-    filepath=QString("C:/Users/Kriar/Documents/Project_Kriti/UserData/%1/").arg(QString::number(cuser))+QString("%1_%2.txt").arg(iname,QString::number(cuser));
+    filepath=QString("../UserData/%1/").arg(QString::number(cuser))+QString("%1_%2.txt").arg(iname,QString::number(cuser));
 
     fout.open(filepath.toStdString());
     fout.close();
