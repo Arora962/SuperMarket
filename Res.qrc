@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>./imag/11.png</file>
+        <file>./imag/22.png</file>
+	<file>./imag/superCopy.jpeg</file>
+    </qresource>
+</RCC>
