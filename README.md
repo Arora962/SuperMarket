@@ -11,6 +11,7 @@ and Books.
 - MySQL Connector C++ version 8.0
 - MySQL Workbench 8.0 CE
 - MySQL Server 8.0
+- Optional : Convert your system to light mode to see the colours better.
 
 # How to run this application
 - Donwload the given Dump folder and load the database using MySQL Workbench.
